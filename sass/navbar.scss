@@ -1,0 +1,88 @@
+@import "variable";
+
+#navbar-id {
+	box-shadow: 0 2px 8px rgba(0,0,0,0.30);
+	
+}
+
+.navbar-brand {
+	color: $color1;
+	letter-spacing: 1.5px;
+	font-size: 20px;
+}
+
+.fa-external-link-square, .fa-user-plus, .nav-link {
+	color: $color1;
+	font-weight: lighter;
+}
+
+.nav-link {
+	font-size: 14px;
+	letter-spacing: 2px;
+	&:hover {
+		color: $color1;
+	}
+}
+
+.btn {
+	background-color: $color1;
+	color: $color3;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	&:hover {
+		color: $color3;
+	}
+}
+
+.navbar-toggler:focus {
+	outline: none;
+}
+
+/////////////////////////////footer//////////////////////////////
+footer {
+	background-color: $color1;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.30);
+}
+footer > div.text-center a, footer > div.text-center{
+	color: $color3;
+}
+
+////////////////////////////////////////////////
+/////////////////LOGIN MODAL////////////////////
+.modal-title {
+	color: $color1;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+.modal-header button {
+	&:focus {
+		outline: none;
+	}
+}
+.modal-body a {
+	color: $color2;
+	&:hover {
+		text-decoration: none;
+		color: $color1;
+	}
+}
+.logReg-button {
+	color: $color3;
+	background-color: $color1;
+	border-radius: 0px;
+	letter-spacing: 2px;
+	border: none;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+.logReg-button .fa-external-link-square, .logReg-button .fa-user-plus{
+	color: $color3;
+	margin-right: 10px;
+}
+.input-group-prepend .input-group-text{
+	background-color: $color1;	
+}
+.fa-input {
+	color: $color3;
+
+}

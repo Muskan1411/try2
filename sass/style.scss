@@ -1,0 +1,234 @@
+@import "variable";
+@import "mixin";
+
+.section-class {
+	background: url('../img/backdrop1.jpg') center no-repeat;
+	background-size: cover;
+	color: $color3;
+	padding: 40px 0;
+	background-size: 100%;
+	transition: all 3s ease-in;
+	
+	&:hover {
+		background-size: 120%;
+	}
+	@include mQ(600px) {
+		padding: 20px 0;
+
+	}
+}
+h1.title {
+	@include mQ(600px) {
+		font-size: 28px;
+	}
+}
+p.subtitle {
+	font-size: 22px;
+	@include mQ(600px) {
+		font-size: 18px;
+	}
+}
+.search-bar {
+	background: rgba(151,151,151,.33);
+} 
+
+.styled-select {
+  box-sizing: border-box; 
+  overflow: hidden;
+  position: relative;
+}
+.styled-select select {
+  height: 34px;
+  padding: 5px 0 5px 5px;
+  background: $color3;
+  border: none;
+  -webkit-appearance: none; 
+}
+
+select:focus { 
+	outline: none;
+}
+.fa-map-marker, .fa-search {
+  color: $color1;
+  position: absolute;
+  top: 0;
+  right: 12px;
+  font-size: 24px;
+  margin-top: 5px;
+}
+.styled-select .form-control {
+	border: none;
+	border-radius: 0px;
+	margin-bottom: 10px;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	@include mQ(600px) {
+		font-size: 14px;
+	}
+}
+.search-button {
+	border-radius: 0px;
+	background-color: $color1;
+	letter-spacing: 2px;
+	font-weight: 300;
+	color: $color3;
+	border: none;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.col-md-4 {
+	@include mQ(600px) {
+		margin-top: 10px;
+	}
+}
+
+
+
+/////////////////////////////////////////////////////////
+//////////////////////CATEGORIES////////////////////////
+.categories {
+	background-color: $color1;
+	padding: 40px 0;
+}
+.title1 {
+	color: $color3;
+	letter-spacing: 2px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+//////////dropdown///////////
+.category div{
+	@include mQ(600px) {
+		margin-bottom:10px;
+		text-align: left;
+	}
+}
+.category button {
+	color: $color3;
+	font-size: 12px;
+	letter-spacing: 2px;
+	font-weight: lighter;
+	background: inherit;
+	border: none;
+	&:focus {
+		outline: none;
+		color: $color2;
+	}
+
+}
+.category img {
+	transform: scale(0.8);
+	transition: all 1s ease-out;
+	&:hover {
+		transform: scale(1);
+		transition: all 1s ease-in;
+	}
+}
+
+//////////////dropdown/////////////////
+.dropdown-menu {
+	background-color: $color2;
+	border: none;
+	
+}
+.dropdown-menu .dropdown-item {
+	color: $color3;
+	font-size: 15px;
+	font-weight: lighter;
+	&:hover {
+		color: $color2;
+		font-weight: 500;
+	}
+	@include mQ(600px) {
+		font-size: 13px;
+	}
+}
+.category img {
+	@include mQ(600px) {
+	width: 40px;
+}
+}
+
+///////////////////////////////POPULAR NEAR YOU/////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+//////////Heading//////////////
+.popular p{
+	color: $color2;
+	font-size: 36px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 30px 0;
+	@include mQ(600px) {
+		font-size: 24px;
+	}
+}
+//////////Owl Carousel//////////
+.owl-carousel1 .item .card, .owl-carousel2 .item .card{
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.owl-prev {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    margin-left: -25px;
+    display: block !important;   
+    &:focus {
+    	outline: none;
+    }
+    @include mQ(600px) {
+    	height: 30px;
+    }
+}
+
+.owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    right: -25px;
+    display: block !important;
+    &:focus {
+    	outline: none;
+    }
+    @include mQ(600px) {
+    	height: 30px;
+    }
+}
+.owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
+.owl-carousel .card-header {
+	@include mQ(600px) {
+		padding: 0;
+	}
+}
+.owl-carousel .card-body {
+	@include mQ(600px) {
+		padding: 0;
+	}
+}
+.animatable {
+  visibility: hidden;   
+  animation-play-state: paused; 
+}
+
+.animated {
+  visibility: visible;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-play-state: running;
+}
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
+
+
+//////////////////////////////Modals/////////////////////////

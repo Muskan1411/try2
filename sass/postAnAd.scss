@@ -1,0 +1,61 @@
+@import "variable";
+.file-upload {
+	border: 1px solid $color1;
+}
+// .file-upload input[type="file"] {
+// 	width: 100%;
+// 	visibility:  hidden;
+// }
+section.container {
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.catloc-div {
+	background-color: $color1;
+}
+.catloc-div input, .catloc-div select  {
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	border-radius: 0px;
+	border: none;
+}
+.post_ad .card-header {
+	color: $color1;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.label-font {
+	font-size: 14px;
+	color: $color1;
+	letter-spacing: 2px;
+}
+.image-header {
+	font-size: 20px;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	color: $color1;
+}
+.post_ad input[type="text"] ,.post_ad input[type="email"],.post_ad input[type="tel"], .post_ad select{
+	font-size: 14px;
+	letter-spacing: 1px;
+	height: 44px;
+	&:focus {
+		outline: none;
+		border: 1px solid $color1;
+	}
+}
+#chooseFile {
+	margin: 5px;
+	font-size: 14px;
+}
+.SubmitForReview {
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	color: $color3;
+	background-color: $color1;
+	border: none;
+	border-radius: 0px;
+	margin-top: 10px;
+	padding: 6px 28px;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}

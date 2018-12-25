@@ -1,0 +1,70 @@
+#navbar-id {
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); }
+
+.navbar-brand {
+  color: #901108;
+  letter-spacing: 1.5px;
+  font-size: 20px; }
+
+.fa-external-link-square, .fa-user-plus, .nav-link {
+  color: #901108;
+  font-weight: lighter; }
+
+.nav-link {
+  font-size: 14px;
+  letter-spacing: 2px; }
+  .nav-link:hover {
+    color: #901108; }
+
+.btn {
+  background-color: #901108;
+  color: #fff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase; }
+  .btn:hover {
+    color: #fff; }
+
+.navbar-toggler:focus {
+  outline: none; }
+
+footer {
+  background-color: #901108;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); }
+
+footer > div.text-center a, footer > div.text-center {
+  color: #fff; }
+
+.modal-title {
+  color: #901108;
+  letter-spacing: 2px;
+  font-weight: 600; }
+
+.modal-header button:focus {
+  outline: none; }
+
+.modal-body a {
+  color: #303030; }
+  .modal-body a:hover {
+    text-decoration: none;
+    color: #901108; }
+
+.logReg-button {
+  color: #fff;
+  background-color: #901108;
+  border-radius: 0px;
+  letter-spacing: 2px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 300; }
+
+.logReg-button .fa-external-link-square, .logReg-button .fa-user-plus {
+  color: #fff;
+  margin-right: 10px; }
+
+.input-group-prepend .input-group-text {
+  background-color: #901108; }
+
+.fa-input {
+  color: #fff; }
